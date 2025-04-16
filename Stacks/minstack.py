@@ -1,4 +1,3 @@
-
 class MinStack:
 
     def __init__(self):
@@ -23,6 +22,23 @@ class MinStack:
 
     # time complexity: O(1) for all stack operation
     # space complexity: O(n) storing n elements into the stack
+
+    # alternative implementation
+
+    # def __init__(self):
+    #     self.stack = [ (None, float('inf')) ]
+        
+    # def push(self, val: int) -> None:
+    #     self.stack.append( (val, min(val, self.getMin())) )
+
+    # def pop(self) -> None:
+    #     self.stack.pop()
+        
+    # def top(self) -> int:
+    #     return self.stack[-1][0]
+
+    # def getMin(self) -> int:
+    #     return self.stack[-1][1]
 
 # Your MinStack object will be instantiated and called as such:
 # obj = MinStack()
