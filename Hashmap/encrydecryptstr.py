@@ -53,6 +53,7 @@ class Encrypter:
     def decrypt(self, word2: str) -> int:
         return self.dictmap[word2]
 
+# updated on 4/17
 # Your Encrypter object will be instantiated and called as such:
 # obj = Encrypter(keys, values, dictionary)
 # param_1 = obj.encrypt(word1)
