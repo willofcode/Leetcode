@@ -1,3 +1,4 @@
+# solutin 
 class Solution:
     def runningSum(self, nums: List[int]) -> List[int]:
         # we want to add each index in nums and store it in the order of the index
