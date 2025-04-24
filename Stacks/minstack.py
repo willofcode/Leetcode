@@ -1,7 +1,7 @@
 class MinStack:
 
     def __init__(self):
-        self.stack = [] # intialize stack
+        self.stack = [] # intialize stack LIFO
         
     def push(self, val: int) -> None:
         min_val = self.getMin() # get current min
@@ -15,10 +15,10 @@ class MinStack:
         self.stack.pop() # pop element from stack
         
     def top(self) -> int:
-        return self.stack[-1][0] if self.stack else None # return the first top element
+        return self.stack[-1][0] if self.stack else None # return the current min element (last in)
 
     def getMin(self) -> int:
-        return self.stack[-1][1] if self.stack else None # return second to top element
+        return self.stack[-1][1] if self.stack else None # return the prev min element (second to last in)
 
     # time complexity: O(1) for all stack operation
     # space complexity: O(n) storing n elements into the stack
