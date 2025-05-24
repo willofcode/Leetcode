@@ -1,6 +1,6 @@
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
-        # handles edge case
+        # handles edge case 
         if len(s) != len(t):
             return False
         # initialize count with 26 index for the alphabets
@@ -16,12 +16,12 @@ class Solution:
                 return False
         return True
 
+# hash map with array
 # time complexity: O(nlogn + mlogm) nth element in s and mth element in t
 # space complexity: O(1)
 
-# alternative implementation
+# alternative implementation with hashmap
 
-#class Solution:
 #    def isAnagram(self, s: str, t: str) -> bool:
 #        if len(s) != len(t):
 #            return False
@@ -32,3 +32,11 @@ class Solution:
 #            countS[s[i]] = 1 + countS.get(s[i], 0)
 #            countT[t[i]] = 1 + countT.get(t[i], 0)
 #        return countS == countT
+
+# alternative implementation with sorting 
+    
+# def isAnagram(self, s: str, t: str) -> bool:
+#     if len(s) != len(t):
+#         return False
+        
+#     return sorted(s) == sorted(t)
