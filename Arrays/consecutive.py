@@ -6,7 +6,7 @@ class Solution:
         # need to create a function to determine consecutive sequence
         # then once function detects a sequence, add to a counter
         # also need to consider duplicates
-
+    
         sequence = 0 # sequence starts at 0
         hash = set(nums) # rids duplicate but adds space complexity
 
