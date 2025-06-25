@@ -53,6 +53,6 @@ class Solution:
 #                    return res
         
         # most efficient
-        # time complexity: O(n)
-        # space complexity: O(n)
+        # time complexity: O(n) for n elenents
+        # space complexity: O(n) for n elements stored 
     
