@@ -1,28 +1,31 @@
 #380
 
+# first implementation - Not all functions run O(1) time complexity
+# removing a specific element from an array requires O(n) time
+
 # import random
 
 # class solution:
     
-    def __init__(self):
-        self.map = set()
+#     def __init__(self):
+#         self.map = set()
         
-    def add(self, val):
-        self.map.add(val)
-        # O(1) time complpexity
-    def remove(self, val):
-        self.map.remove(val)
-        # O(1) time complpexity
-    def getRandom(self):
-        list_map = list(self.map)
-        x = len(list_map)
-        randomval = random.randint(0,x-1)
-        print(list_map[randomval])
-        # O(1) time complpexity
-    def printSet(self):
-        print(list(self.map))
+#     def add(self, val):
+#         self.map.add(val)
+#         # O(1) time complpexity
+#     def remove(self, val):
+#         self.map.remove(val)
+#         # O(n) time complpexity
+#     def getRandom(self):
+#         list_map = list(self.map)
+#         x = len(list_map)
+#         randomval = random.randint(0,x-1)
+#         print(list_map[randomval])
+#         # O(1) time complpexity
+#     def printSet(self):
+#         print(list(self.map))
         
-        
+# correct implementation utilizing hashmap and stack        
 class RandomizedSet:
 
     def __init__(self):
@@ -52,4 +55,5 @@ class RandomizedSet:
 
     def getRandom(self) -> int:
         index = random.randint(0, len(self.values) - 1)
+        return self.values[index]
         return self.values[index]
