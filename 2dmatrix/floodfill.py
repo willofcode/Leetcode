@@ -52,7 +52,33 @@ class Solution:
         # dfs(sr, sc)
         # return image
         
-        # time complexity: O(n) for nth numnber of pixels
-        # space complexity: O(n) for call stack of dfs
+        # time complexity: O(m*n) for nth numnber of pixels
+        # space complexity: O(m*n) for call stack of dfs
         
         
+#        # implement BFS
+#        src = image[sr][sc]
+#        # handles infinite recursion, if source pixel is already color
+#        if src == color:    # stop condition
+#            return image
+#        
+#        row, col = len(image),len(image[0])
+#        dirs = [[1,0],[-1,0],[0,1],[0,-1]]
+#        #
+#        que = collections.deque([(sr,sc)])
+#        # mark the starting pixel as recolored, ensured no cycle or revisiting
+#        image[sr][sc] = color
+#
+#        while que:
+#            # pop the front element (popleft()) ensuring FIFO order *BFS patter*
+#            r, c = que.popleft()
+#            for dr, dc in dirs:
+#                # traverse in adjacent direction
+#                nr, nc = r + dr, c + dc
+#                # ensuring neighbor (nr, nc) still in designated region and inside the image boundaries
+#                if 0 <= nr < row and 0 <= nc < col and image[nr][nc] == src:
+#                    # recolored and marked as visited
+#                    image[nr][nc] = color
+#                    que.append((nr,nc)) # explore neighbor and append FIFO
+#        
+#        return image
