@@ -27,8 +27,32 @@ class Solution:
         dfs(sr,sc)
         return image
 
-        # time complexity: O(m*n) for traversing throught m x n dimension
-        # space complexity: O(m*n) for recursive auxillary calls
+        # time complexity: O(m*n) for nth numnber of pixels in m x n dimension
+        # space complexity: O(m*n) for call stack of dfs()
 
 
+        # alternate implementation
 
+        # rows, cols = len(image), len(image[0])
+        # source = image[sr][sc]
+        # if source == color:
+        #     return image
+        # def dfs(r, c):
+        #     if image[r][c] == source:
+        #         image[r][c] = color
+        #         if r >= 1:
+        #             dfs(r-1, c)
+        #         if r + 1 < rows:
+        #             dfs(r + 1, c)
+        #         if c >= 1:
+        #             dfs(r, c - 1)
+        #         if c + 1 < cols:
+        #             dfs(r, c + 1)
+
+        # dfs(sr, sc)
+        # return image
+        
+        # time complexity: O(n) for nth numnber of pixels
+        # space complexity: O(n) for call stack of dfs
+        
+        
