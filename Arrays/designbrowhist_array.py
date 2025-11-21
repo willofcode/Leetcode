@@ -17,7 +17,8 @@ class BrowserHistory:
         self.curr = min(len(self.history) - 1, self.curr + steps)
         return self.history[self.curr]
         
-    # time complexity: O(1) for 
+    # time complexity: O(1) for all operations
+    # space complexity: O(m * n) m # of visited url n # aveg len of url
 
 # we can design using stack, Dynamic array, and Doubly LL
 '''
