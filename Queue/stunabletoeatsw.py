@@ -83,5 +83,20 @@ class Solution:
         # time complexity: O(n^2)
         # space complexity: O(n)
         
+        # alternate implementation with frequency count
         
+#        res = len(students)
+#        cnt = Counter(students)
+#
+#        for s in sandwiches:
+#            if cnt[s] > 0:
+#                res -= 1
+#                cnt[s] -= 1
+#            else:
+#                break
+#
+#        return res
+
+        # time complexity: O(n)
+        # space complexity: O(1)
         
