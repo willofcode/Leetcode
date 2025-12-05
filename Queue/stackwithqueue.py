@@ -20,7 +20,8 @@ class MyStack:
     def empty(self) -> bool:
         return len(self.q1) == 0
 
-# time s
+# time complexity: O(n) push, O(1) pop/ initialized
+# space complexity: O(n)
 
 
 # Your MyStack object will be instantiated and called as such:
