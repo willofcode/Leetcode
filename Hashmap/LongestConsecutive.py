@@ -1,5 +1,6 @@
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
+        # sorting implementation
         if not nums:
             return 0
         res = 0
@@ -17,3 +18,20 @@ class Solution:
             curr += 1
             res = max(res, streak)
         return res
+        # Time complexity: O(n log n) due to sort()
+        # Space complexity: O(n) or O(1) dependend on sorting algorithm
+
+        # alternate implementation
+        # numSet = set(nums)
+        # longest = 0
+
+        # for num in numSet:
+        #     if (num - 1) not in numSet:
+        #         length = 1
+        #         while (num + length) in numSet:
+        #             length += 1
+        #         longest = max(length, longest)
+        # return longest
+
+        # time complexity: O(n)
+        # space complexity: O(n)
