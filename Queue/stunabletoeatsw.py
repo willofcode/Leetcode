@@ -10,7 +10,9 @@ class Solution:
         edge case: 
         - does # of sw and # of student are always 1 to 1? (Yes, problem constraints say so)
         - if current sw top of stack has no correspondind student (mismatch causes stalemate early) (Yes, this is the main problem)
-
+        
+        implementing frequency counter is the most efficient method for queue-ing
+        up the students for each sandwich
         '''
         
         # # Convert the students list to a deque (double-ended queue).
