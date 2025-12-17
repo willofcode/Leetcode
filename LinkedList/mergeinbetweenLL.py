@@ -30,6 +30,21 @@ class Solution:
         # Time complexity: O(m + n) m is mth number of node in a and nth number of node in b
         # space complexity: O(1)
         
-        # alternate implementation convert to array
+        # alternate implementation for recursion
+#        if a == 1 :
+#            nxt = list1.next
+#            list1.next = list2
+#            while list2.next:
+#                list2 = list2.next
+#            self.mergeInBetween(nxt, 0, b - 1, list2)
+#            return list1
+#
+#        if b == 0:
+#            list2.next = list1.next
+#            return list1
+#
+#        self.mergeInBetween(list1.next, a - 1, b - 1, list2)
+#        return list1
         
-        
+        # time complexity: O(m + n) mth number of first LL and nth number of second LL
+        # space complexity: O(n)
