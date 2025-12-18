@@ -48,3 +48,22 @@ class Solution:
         
         # time complexity: O(m + n) mth number of first LL and nth number of second LL
         # space complexity: O(n)
+
+
+        # alternate implementation by converting into an array
+        # cur = list1
+        # arr = []
+        # while cur:
+        #     arr.append(cur)
+        #     cur = cur.next
+        # arr[a - 1].next = list2
+
+        # cur = list2
+        # while cur.next:
+        #     cur = cur.next
+
+        # cur.next = arr[b + 1]
+        # return list1
+
+        # time complexity : O(m + n)
+        # space complexity : O(n)
